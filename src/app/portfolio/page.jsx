@@ -58,10 +58,10 @@ export default function PortfolioPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-5xl font-bold text-pink-400 font-['Playfair_Display']">
+          <h1 className="text-5xl font-bold text-white font-['Playfair_Display']">
             Our Portfolio
           </h1>
-          <p className="text-gray-300 mt-4 max-w-xl mx-auto">
+          <p className="text-gray-400 mt-4 max-w-xl mx-auto">
             A collection of our favorite projects—each crafted with care and precision.
           </p>
         </motion.div>
@@ -76,8 +76,8 @@ export default function PortfolioPage() {
               onClick={() => setSelectedCategory(cat)}
               className={`px-5 py-2 rounded-full text-sm uppercase transition-all duration-300 ${
                 selectedCategory === cat
-                  ? 'bg-pink-500 text-white'
-                  : 'bg-gray-800 hover:bg-pink-500 hover:text-white text-gray-300'
+                  ? 'bg-[#034078] text-white'
+                  : 'bg-gray-800 hover:bg-[#034078] hover:text-white text-gray-400'
               }`}
             >
               {cat}
@@ -94,7 +94,7 @@ export default function PortfolioPage() {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               viewport={{ once: true }}
-              className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-pink-500/30 transition"
+              className="bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:shadow-[#034078] transition"
             >
               <div className="relative w-full h-60">
                 <Image
@@ -105,7 +105,7 @@ export default function PortfolioPage() {
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-lg font-semibold text-pink-400">
+                <h3 className="text-lg font-semibold text-white">
                   {project.title}
                 </h3>
                 <p className="text-gray-400 text-sm">{project.category}</p>
@@ -116,7 +116,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* Call to Action */}
-      <section className="py-20 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-black text-center">
+      <section className="py-20 bg-gradient-to-r from-[#0a1128] via-[#001f54] to-[#034078] text-white text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -127,12 +127,12 @@ export default function PortfolioPage() {
           <h2 className="text-3xl md:text-4xl font-bold font-['Playfair_Display'] mb-4">
             Inspired by Our Work?
           </h2>
-          <p className="text-lg mb-6">
+          <p className="text-lg mb-6 text-gray-400">
             Let’s make something amazing together. Reach out and start your next project with us!
           </p>
           <a
             href="/contact"
-            className="inline-block bg-black text-white px-6 py-3 rounded-full uppercase text-sm hover:bg-gray-800 transition"
+            className="inline-block bg-black text-white px-6 py-3 rounded-full uppercase text-sm hover:bg-[#034078] transition"
           >
             Contact Us
           </a>

@@ -22,10 +22,10 @@ export default function AboutPage() {
           transition={{ duration: 0.9 }}
           className="px-4"
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-pink-400 font-['Playfair_Display'] mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-white font-['Playfair_Display'] mb-4">
             About Us
           </h1>
-          <p className="text-gray-200 max-w-2xl mx-auto text-lg">
+          <p className="text-gray-400 max-w-2xl mx-auto text-lg">
             Discover the story behind YourBrand and what drives our team to deliver excellence.
           </p>
         </motion.div>
@@ -40,10 +40,10 @@ export default function AboutPage() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl font-bold text-pink-400 font-['Playfair_Display'] mb-4">
+          <h2 className="text-3xl font-bold text-white font-['Playfair_Display'] mb-4">
             Our Mission
           </h2>
-          <p className="text-gray-300 text-lg max-w-3xl mx-auto">
+          <p className="text-gray-400 text-lg max-w-3xl mx-auto">
             At YourBrand, we’re on a mission to empower businesses through innovative design and impactful digital strategies. 
             We believe in honesty, creativity, and building long-term partnerships.
           </p>
@@ -71,7 +71,7 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.2 }}
               viewport={{ once: true }}
-              className="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-pink-500/20 transition"
+              className="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-[#034078] transition"
             >
               <h3 className="text-xl font-semibold mb-2 text-white">{item.title}</h3>
               <p className="text-gray-400">{item.desc}</p>
@@ -81,7 +81,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Teaser */}
-      <section className="py-20 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-black text-center">
+      <section className="py-20 bg-gradient-to-r from-[#0a1128] via-[#001f54] to-[#034078] text-white text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -98,7 +98,7 @@ export default function AboutPage() {
           <div className="mt-8">
             <a
               href="/team"
-              className="inline-block bg-black text-white px-6 py-2 rounded-full text-sm uppercase hover:bg-gray-800 transition"
+              className="inline-block bg-black text-white px-6 py-2 rounded-full text-sm uppercase hover:bg-[#034078] transition"
             >
               View Full Team
             </a>

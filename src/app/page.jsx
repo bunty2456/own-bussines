@@ -11,6 +11,7 @@ const Page = () => {
       <div>
       <HomePage />
       </div>
+
       <Footer />
     </div>
   )

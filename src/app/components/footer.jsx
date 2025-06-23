@@ -33,15 +33,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
           {/* Company Info */}
           <div>
-            <h3 className="text-pink-400 text-xl font-bold mb-4 font-['Playfair_Display']">YourBrand</h3>
-            <p className="text-gray-300 leading-relaxed">
-              Crafting creative digital experiences with passion and precision. We bring your ideas to life.
+            <h3 className="text-white text-xl font-bold mb-4 font-['Playfair_Display']">YourBrand</h3>
+            <p className="text-gray-200 leading-relaxed">
+              Crafting creative digital  <br />experiences with passion <br /> and precision. We bring your <br />ideas to life.
             </p>
           </div>
 
           {/* Navigation */}
           <div>
-            <h4 className="text-pink-300 font-semibold mb-3 uppercase tracking-wide">Navigate</h4>
+            <h4 className="text-white  font-semibold mb-3 uppercase tracking-wide">Navigate</h4>
             <ul className="space-y-2">
               <li><Link href="/" className="hover:text-blue-400 transition">Home</Link></li>
               <li><Link href="/about" className="hover:text-blue-400 transition">About</Link></li>
@@ -53,7 +53,7 @@ const Footer = () => {
 
           {/* Support */}
           <div>
-            <h4 className="text-pink-300 font-semibold mb-3 uppercase tracking-wide">Support</h4>
+            <h4 className="text-white font-semibold mb-3 uppercase tracking-wide">Support</h4>
             <ul className="space-y-2">
               <li><Link href="/faq" className="hover:text-blue-400 transition">FAQ</Link></li>
               <li><Link href="/privacy" className="hover:text-blue-400 transition">Privacy Policy</Link></li>
@@ -64,7 +64,7 @@ const Footer = () => {
 
           {/* Socials */}
           <div>
-            <h4 className="text-[#001f54] font-semibold mb-3 uppercase tracking-wide">Follow Us</h4>
+            <h4 className="text-white font-semibold mb-3 uppercase tracking-wide">Follow Us</h4>
             <div className="flex space-x-4 text-lg">
               <Link href="#" className="hover:text-blue-400 transition"><FaFacebookF /></Link>
               <Link href="#" className="hover:text-blue-400 transition"><FaTwitter /></Link>
@@ -75,7 +75,7 @@ const Footer = () => {
         </div>
 
         {/* Divider & Copyright */}
-        <div className="mt-12 border-t border-pink-500/20 pt-6 text-xs text-gray-400 text-center">
+        <div className="mt-12 border-t border-[#001f54] pt-6 text-xs text-gray-400 text-center">
           © {new Date().getFullYear()} YourBrand. Crafted with passion. All rights reserved.
         </div>
       </div>

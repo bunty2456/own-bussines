@@ -45,10 +45,10 @@ export default function ServicesPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-5xl font-bold text-pink-400 font-['Playfair_Display']">
+          <h1 className="text-5xl font-bold text-white font-['Playfair_Display']">
             Our Services
           </h1>
-          <p className="text-lg text-gray-200 mt-4 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">
             We provide creative, strategic, and data-driven solutions to build and grow digital brands.
           </p>
         </motion.div>
@@ -63,10 +63,10 @@ export default function ServicesPage() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl font-bold text-pink-400 font-['Playfair_Display'] mb-4">
+          <h2 className="text-3xl font-bold text-white font-['Playfair_Display'] mb-4">
             What We Offer
           </h2>
-          <p className="text-gray-300 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto">
             We specialize in complete digital transformations—from concept to launch and beyond.
           </p>
         </motion.div>
@@ -79,9 +79,9 @@ export default function ServicesPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: i * 0.2 }}
               viewport={{ once: true }}
-              className="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-pink-500/30 transition"
+              className="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-[#034078] transition"
             >
-              <div className="flex items-center gap-4 mb-4 text-pink-400">
+              <div className="flex items-center gap-4 mb-4 text-white">
                 {service.icon}
                 <h3 className="text-xl font-semibold">{service.title}</h3>
               </div>
@@ -92,7 +92,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-black text-center">
+      <section className="py-20 bg-gradient-to-r from-[#0a1128] via-[#001f54] to-[#034078] text-white text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -103,12 +103,12 @@ export default function ServicesPage() {
           <h2 className="text-3xl md:text-4xl font-bold font-['Playfair_Display'] mb-4">
             Ready to Work Together?
           </h2>
-          <p className="text-lg mb-6">
+          <p className="text-lg mb-6 text-gray-400">
             Let’s build something amazing. Contact us today to get started on your next big idea.
           </p>
           <a
             href="/contact"
-            className="inline-block bg-black text-white px-6 py-3 rounded-full uppercase text-sm hover:bg-gray-800 transition"
+            className="inline-block bg-black text-white px-6 py-3 rounded-full uppercase text-sm hover:bg-[#034078] transition"
           >
             Contact Us
           </a>

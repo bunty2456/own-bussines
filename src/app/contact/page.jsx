@@ -14,10 +14,10 @@ export default function ContactPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-pink-400 font-['Playfair_Display']">
+          <h1 className="text-4xl md:text-5xl font-bold text-white font-['Playfair_Display']">
             Get in Touch
           </h1>
-          <p className="text-gray-200 mt-4 text-lg">
+          <p className="text-gray-300 mt-4 text-lg">
             We'd love to hear from you. Let’s start a conversation.
           </p>
         </motion.div>
@@ -33,29 +33,29 @@ export default function ContactPage() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl font-bold text-pink-400 font-['Playfair_Display'] mb-6">
+            <h2 className="text-3xl font-bold text-white font-['Playfair_Display'] mb-6">
               Contact Information
             </h2>
-            <ul className="space-y-6 text-gray-300">
+            <ul className="space-y-6 text-gray-100">
               <li className="flex items-start gap-4">
-                <FiMapPin className="text-pink-500 mt-1" size={22} />
+                <FiMapPin className="text-white mt-1" size={22} />
                 <div>
                   <strong>Address</strong>
-                  <p>123 Creative Avenue, Digital City</p>
+                  <p className='text-gray-400'>p#781,street.#1 Slami chock punjab x-ray, City FSD</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <FiPhone className="text-pink-500 mt-1" size={22} />
+                <FiPhone className="text-white mt-1" size={22} />
                 <div>
                   <strong>Phone</strong>
-                  <p>+1 (234) 567-890</p>
+                  <p className='text-gray-400'>+92 (333) 651-6071</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
-                <FiMail className="text-pink-500 mt-1" size={22} />
+                <FiMail className="text-white mt-1" size={22} />
                 <div>
                   <strong>Email</strong>
-                  <p>hello@yourbrand.com</p>
+                  <p className='text-gray-400'>abrahamrandhawa@gmail.com</p>
                 </div>
               </li>
             </ul>
@@ -74,21 +74,21 @@ export default function ContactPage() {
               <input
                 type="text"
                 placeholder="Your Name"
-                className="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-pink-500"
+                className="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-[#034078]"
               />
               <input
                 type="email"
                 placeholder="Your Email"
-                className="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-[#4f030c]"
+                className="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-[#034078]"
               />
               <textarea
                 rows="5"
                 placeholder="Your Message"
-                className="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-[#4f030c]"
+                className="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-[#034078]"
               ></textarea>
               <button
                 type="submit"
-                className="bg-[#4f030c] hover:bg-[#5c0711] transition-all px-6 py-2 rounded-full uppercase text-sm font-medium"
+                className="bg-[#001f54] hover:bg-[#034078] transition-all px-6 py-2 rounded-full uppercase text-sm font-medium"
               >
                 Send Message
               </button>
@@ -98,7 +98,7 @@ export default function ContactPage() {
       </section>
 
       {/* Footer CTA */}
-      <section className="py-10 text-center text-gray-400 text-sm border-t border-pink-500/20">
+      <section className="py-10 text-center text-gray-400 text-sm border-t border-[#001f54]">
         &copy; {new Date().getFullYear()} YourBrand. All rights reserved.
       </section>
     </main>
