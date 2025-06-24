@@ -43,7 +43,7 @@ export default function HomePage() {
           className="max-w-3xl px-4"
         >
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 font-['Playfair_Display']">
-            Welcome to YourBrand
+            Welcome to Codera
           </h1>
           <p className="text-gray-500 text-lg md:text-xl mb-6">
             We craft stunning experiences that connect people to brands.
@@ -96,7 +96,7 @@ export default function HomePage() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Ready to Elevate Your Brand?
+            Ready to Elevate My Brand?
           </h2>
           <Link
             href="/contact"

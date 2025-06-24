@@ -99,7 +99,7 @@ export default function ContactPage() {
 
       {/* Footer CTA */}
       <section className="py-10 text-center text-gray-400 text-sm border-t border-[#001f54]">
-        &copy; {new Date().getFullYear()} YourBrand. All rights reserved.
+        &copy; {new Date().getFullYear()} Codera Brand. All rights reserved.
       </section>
     </main>
   );

@@ -33,7 +33,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-sm">
           {/* Company Info */}
           <div>
-            <h3 className="text-white text-xl font-bold mb-4 font-['Playfair_Display']">YourBrand</h3>
+            <h3 className="text-white text-xl font-bold mb-4 font-['Playfair_Display']">Codera</h3>
             <p className="text-gray-200 leading-relaxed">
               Crafting creative digital  <br />experiences with passion <br /> and precision. We bring your <br />ideas to life.
             </p>
@@ -76,7 +76,7 @@ const Footer = () => {
 
         {/* Divider & Copyright */}
         <div className="mt-12 border-t border-[#001f54] pt-6 text-xs text-gray-400 text-center">
-          © {new Date().getFullYear()} YourBrand. Crafted with passion. All rights reserved.
+          © {new Date().getFullYear()} Codera Brand. Crafted with passion. All rights reserved.
         </div>
       </div>
     </motion.footer>

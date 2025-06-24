@@ -32,7 +32,7 @@ const Header = () => {
           >
             <Link href="/">
               <span className="text-2xl font-bold text-[#034078] font-['Playfair_Display'] tracking-tight">
-                YourBrand
+                Codera 
               </span>
             </Link>
           </motion.div>
