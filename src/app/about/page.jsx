@@ -4,12 +4,30 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function AboutPage() {
+  const features = [
+    {
+      title: "Creative Strategy",
+      desc: "We design solutions tailored to your brand voice and audience goals.",
+      icon: "https://cdn-icons-png.flaticon.com/512/3595/3595455.png",
+    },
+    {
+      title: "User-Centered Design",
+      desc: "Our designs focus on enhancing user experiences across all platforms.",
+      icon: "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+    },
+    {
+      title: "Results-Driven",
+      desc: "We measure success with real outcomes, not just visuals.",
+      icon: "https://cdn-icons-png.flaticon.com/512/4255/4255406.png",
+    },
+  ];
+
   return (
     <main className="bg-gray-950 text-white font-['Roboto']">
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center text-center overflow-hidden">
         <Image
-          src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg"
+          src="https://images.pexels.com/photos/577210/pexels-photo-577210.jpeg"
           alt="About Background"
           fill
           className="-z-10 object-cover opacity-70"
@@ -31,7 +49,7 @@ export default function AboutPage() {
         </motion.div>
       </section>
 
-      {/* Mission & Vision */}
+      {/* Mission Section */}
       <section className="py-20 px-6 max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
@@ -40,16 +58,17 @@ export default function AboutPage() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl font-bold text-white font-['Playfair_Display'] mb-4">
+          <h2 className="text-3xl font-bold font-['Playfair_Display'] mb-4">
             Our Mission
           </h2>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-            At YourBrand, we’re on a mission to empower businesses through innovative design and impactful digital strategies. 
-            We believe in honesty, creativity, and building long-term partnerships.
+            At YourBrand, our mission is to create innovative digital experiences that build
+            trust, deliver impact, and grow businesses. We believe in strategy-backed design,
+            strong partnerships, and results that speak.
           </p>
         </motion.div>
 
-        {/* Values Grid */}
+        {/* Core Values */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {[
             {
@@ -73,14 +92,50 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-[#034078] transition"
             >
-              <h3 className="text-xl font-semibold mb-2 text-white">{item.title}</h3>
+              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
               <p className="text-gray-400">{item.desc}</p>
             </motion.div>
           ))}
         </div>
       </section>
 
-      {/* Team Teaser */}
+      {/* Features Section */}
+      <section className="py-20 px-6 max-w-6xl mx-auto">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-3xl font-bold text-center mb-12 font-['Playfair_Display']"
+        >
+          What We Offer
+        </motion.h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          {features.map((feature, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: i * 0.2 }}
+              viewport={{ once: true }}
+              className="bg-gray-900 p-6 rounded-xl shadow-lg hover:shadow-[#034078] transition text-center"
+            >
+              <Image
+                src={feature.icon}
+                alt={feature.title}
+                width={60}
+                height={60}
+                className="mx-auto mb-4"
+              />
+              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+              <p className="text-gray-400">{feature.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Team CTA */}
       <section className="py-20 bg-gradient-to-r from-[#0a1128] via-[#001f54] to-[#034078] text-white text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -92,7 +147,7 @@ export default function AboutPage() {
           <h2 className="text-3xl md:text-4xl font-bold font-['Playfair_Display'] mb-4">
             Meet Our Team
           </h2>
-          <p className="text-lg">
+          <p className="text-lg text-gray-300">
             We’re a passionate group of designers, developers, and strategists who thrive on building great things together.
           </p>
           <div className="mt-8">
