@@ -45,7 +45,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/services"
-            className="bg-[#001f54] hover:bg-[#034078] text-white px-6 py-3 rounded-full transition-all duration-300 text-sm uppercase"
+            className="bg-[#001f54] hover:bg-[#034078] text-white px-6 py-3 rounded-full transition-all duration-300 text-sm uppercase "
           >
             Explore Services
           </Link>
