@@ -1,9 +1,35 @@
 'use client';
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiMail, FiMapPin, FiPhone } from 'react-icons/fi';
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [status, setStatus] = useState('');
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('Sending...');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json();
+      setStatus(data.message);
+      setFormData({ name: '', email: '', message: '' });
+    } catch (err) {
+      console.error(err);
+      setStatus('Something went wrong.');
+    }
+  };
+
   return (
     <main className="bg-gray-950 text-white font-['Roboto']">
       {/* Hero */}
@@ -41,21 +67,21 @@ export default function ContactPage() {
                 <FiMapPin className="text-white mt-1" size={22} />
                 <div>
                   <strong>Address</strong>
-                  <p className='text-gray-400'>p#781,street.#1 Slami chock punjab x-ray, City FSD</p>
+                  <p className="text-gray-400">p#781,street.#1 Slami chock punjab x-ray, City FSD</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <FiPhone className="text-white mt-1" size={22} />
                 <div>
                   <strong>Phone</strong>
-                  <p className='text-gray-400'>+92 (333) 651-6071</p>
+                  <p className="text-gray-400">+92 (333) 651-6071</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <FiMail className="text-white mt-1" size={22} />
                 <div>
                   <strong>Email</strong>
-                  <p className='text-gray-400'>abrahamrandhawa@gmail.com</p>
+                  <p className="text-gray-400">abrahamrandhawa@gmail.com</p>
                 </div>
               </li>
             </ul>
@@ -70,21 +96,33 @@ export default function ContactPage() {
             className="bg-gray-900 p-8 rounded-2xl shadow-lg"
           >
             <h3 className="text-xl font-semibold mb-4">Send Us a Message</h3>
-            <form className="space-y-4">
+            <form className="space-y-4" onSubmit={handleSubmit}>
               <input
                 type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
                 placeholder="Your Name"
                 className="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-[#034078]"
+                required
               />
               <input
                 type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 placeholder="Your Email"
                 className="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-[#034078]"
+                required
               />
               <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 rows="5"
                 placeholder="Your Message"
                 className="w-full p-3 rounded-lg bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-[#034078]"
+                required
               ></textarea>
               <button
                 type="submit"
@@ -92,6 +130,7 @@ export default function ContactPage() {
               >
                 Send Message
               </button>
+              {status && <p className="text-gray-400 text-sm mt-2">{status}</p>}
             </form>
           </motion.div>
         </div>
