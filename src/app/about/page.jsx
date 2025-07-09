@@ -327,7 +327,7 @@ export default function AboutPage() {
             </Link>
             
             <Link
-              href="/careers"
+              href="/JoinOurTeam"
               className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-9 py-4  rounded-full uppercase text-sm transition"
             >
               Join Our Team
