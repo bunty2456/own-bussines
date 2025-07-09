@@ -221,6 +221,7 @@ export default function PortfolioPage() {
           <h2 className="text-3xl font-bold font-['Playfair_Display'] mb-4 text-white">
             Featured Projects
           </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#0466c8] to-[#034078] mx-auto mb-8"></div>
           <p className="text-gray-300 text-lg max-w-3xl mx-auto">
             Each project represents our commitment to excellence, innovation, and delivering results that exceed expectations.
           </p>
@@ -365,6 +366,7 @@ export default function PortfolioPage() {
             <h2 className="text-3xl font-bold text-white font-['Playfair_Display'] mb-4">
               How We Work
             </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#0466c8] to-[#034078] mx-auto mb-8"></div>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
               Our proven process ensures every project delivers exceptional results
             </p>
@@ -444,11 +446,13 @@ export default function PortfolioPage() {
                 <ArrowRightIcon />
               </button>
             </motion.div>
+            <a href="/services">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <button className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full uppercase text-sm transition">
                 View Services
               </button>
             </motion.div>
+            </a>
           </div>
         </motion.div>
       </section>

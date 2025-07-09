@@ -244,7 +244,7 @@ export default function AboutPage() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-5xl font-bold font-['Playfair_Display'] mb-6 text-white">
-            What We <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0466c8] to-[#034078]">Offer</span>
+            What We Offer
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#0466c8] to-[#034078] mx-auto mb-8"></div>
           <p className="text-gray-400 text-lg max-w-3xl mx-auto">
@@ -308,16 +308,16 @@ export default function AboutPage() {
           className="max-w-5xl mx-auto px-6 relative z-10"
         >
           <h2 className="text-4xl md:text-5xl font-bold font-['Playfair_Display'] mb-6 text-white">
-            Meet Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#87ceeb] to-[#ffffff]">Team</span>
+            Meet Our Team
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#87ceeb] to-[#ffffff] mx-auto mb-8"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#0466c8] to-[#034078] mx-auto mb-8"></div>
           <p className="text-xl text-gray-200 mb-10 leading-relaxed max-w-3xl mx-auto">
             We're a passionate group of designers, developers, and strategists who thrive on building exceptional digital experiences and lasting partnerships.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Link
-              href="/team"
+              href="/ViewOurTeam"
               className="group inline-flex items-center bg-white hover:bg-gray-100 text-[#001f54] px-10 py-4 rounded-full uppercase text-sm font-bold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform"
             >
               View Our Team

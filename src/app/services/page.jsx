@@ -182,6 +182,7 @@ export default function ServicesPage() {
           <h2 className="text-3xl font-bold font-['Playfair_Display'] mb-4 text-white">
             What We Offer
           </h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-[#0466c8] to-[#034078] mx-auto mb-8"></div>
           <p className="text-gray-300 text-lg max-w-3xl mx-auto">
             From concept to launch, we provide end-to-end services that drive growth and exceed expectations.
           </p>
@@ -259,6 +260,7 @@ export default function ServicesPage() {
             <h2 className="text-3xl font-bold text-white font-['Playfair_Display'] mb-4">
               Our Process
             </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-[#0466c8] to-[#034078] mx-auto mb-8"></div>
             <p className="text-gray-300 text-lg max-w-2xl mx-auto">
               A proven methodology that ensures exceptional results every time
             </p>
@@ -333,11 +335,13 @@ export default function ServicesPage() {
                 <ArrowRightIcon />
               </button>
             </motion.div>
+            <a href="/portfolio">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <button className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full uppercase text-sm transition">
                 View Our Work
               </button>
             </motion.div>
+            </a>
           </div>
         </motion.div>
       </section>

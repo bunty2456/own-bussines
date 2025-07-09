@@ -48,6 +48,7 @@ export default function FAQPage() {
           transition={{ duration: 0.6 }}
         >
           Frequently Asked Questions
+          
         </motion.h1>
 
         <section className="space-y-8">
